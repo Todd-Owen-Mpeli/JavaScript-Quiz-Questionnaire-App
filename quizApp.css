@@ -1,0 +1,888 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+	/*========== Font Properties ==========*/
+	--font-header: "Bebas Neue", cursive;
+	--font-body: "Rubik", sans-serif;
+	--font-option1: "Heebo", sans-serif;
+	/*========== Colours ==========*/
+
+	/* Website Colours */
+	--color-white: #fff;
+	--color-black: #000000;
+	--color-light-black: #292929;
+	--color-Purple: #9d73ff;
+	--color-hover-Purple: #743afa;
+
+	/* Website background Colours */
+	--color-white-background: #fff;
+	--color-black-background: #000000;
+	--color-light-black-background: #292929;
+
+	/* Font Colours */
+	--color-font-white: #fff;
+	--color-font-black: #000000;
+	--color-font-light-black: #292929;
+
+	/*  Button Colour */
+
+	--color-button-green: #ff2ca7;
+	--color-button-hover-green: #ff0095;
+
+	/*  Navigation Menu Links */
+	--color-navigation-hover-accent-pinkRedPurple: #9d73ff;
+
+	/*========== Font Size ==========*/
+	--font-size-normal: 1.1vh;
+	--font-size-large: 1.5vh;
+	--font-size-XL-large: 4.5vh;
+	--font-size-navClose: 2.5vh;
+
+	/*========== image box shadow ==========*/
+	--box-shadow-1: 0em 1em 1em rgba(0, 0, 0, 0.25);
+	--box-shadow-2: 0em 1em 1em 0.5em rgba(0, 0, 0, 0.25);
+}
+
+/*==================== BASE ====================*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	/* border: #ff0095 0.25rem solid; */
+	background: var(--color-white);
+	color: var(--color-black);
+}
+
+/*  hides website scrollbar, But Keep scrolling Functionality */
+::-webkit-scrollbar {
+	display: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+ul li {
+	font-size: var(--font-size-normal);
+	margin: 1rem 0rem;
+}
+
+ul li label {
+	cursor: pointer;
+}
+
+a {
+	color: var(--color-font-black);
+	font-weight: var(--font-weight-semi-bold);
+	text-decoration: none;
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
+label {
+	padding-left: 1rem;
+}
+
+/* Question Asked */
+h2 {
+	font-size: var(--font-size-large);
+	padding: 1rem;
+	text-align: center;
+	margin: 0;
+}
+
+p {
+	font-size: var(--font-size-normal);
+}
+
+/*===== NAVIGATION MENU =====*/
+.header {
+	width: 100%;
+	text-decoration: none;
+	background-color: var(--color-white-background);
+	padding: 0.25vw 2vw;
+}
+
+.nav {
+	padding: 1rem;
+	position: relative;
+	font-family: var(--font-body);
+}
+
+.nav li {
+	color: var(--color-font-black);
+}
+
+.website-name {
+	height: auto;
+	font-size: var(--font-size-large);
+}
+
+.website-name:hover {
+	transition: all 0.5s ease-in-out;
+	color: var(--color-navigation-hover-accent-pinkRedPurple);
+}
+
+/*============ QUESTIONNAIRE ============*/
+/* Top Section */
+.questionnaire-title_container {
+	padding: 1.5rem;
+}
+
+.questionnaire_title {
+	font-family: var(--font-body);
+	font-size: var(--font-size-large);
+}
+
+/* Bottom Section */
+.question_content {
+	gap: 4vh;
+	padding: 2rem;
+	margin: auto;
+}
+
+.software_list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 1rem;
+}
+
+.fab {
+	font-size: 5rem;
+	color: var(--color-Purple);
+}
+
+.fab:hover {
+	font-size: 5rem;
+	color: var(--color-hover-Purple);
+}
+
+.quiz-info_container {
+	font-family: var(--font-body);
+	font-size: var(--font-size-normal);
+	color: var(--color-black);
+	background-color: var(--color-white-background);
+	align-self: center;
+	justify-self: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 2rem;
+	border: #000000 0.25rem solid;
+	border-radius: 15px;
+}
+
+.quiz-info_container:hover {
+	transition: all 0.25s ease-in-out;
+	box-shadow: var(--box-shadow-1);
+}
+
+.content {
+	overflow: hidden;
+}
+
+.content h2 p {
+	font-family: var(--font-option1);
+}
+
+.quiz_rightside {
+	transition: all 0.25s ease-in-out;
+	transform: scale(1);
+	font-family: var(--font-body);
+	font-size: var(--font-size-normal);
+	color: var(--color-black);
+	background-color: var(--color-Purple);
+	align-self: center;
+	justify-self: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 2rem;
+	border-radius: 15px;
+}
+
+.quiz_rightside:hover {
+	transition: all 0.25s ease-in-out;
+	transform: scale(1.05);
+}
+
+.quiz-container {
+	background-color: var(--color-white-background);
+	border-radius: 10px;
+	overflow: hidden;
+	min-width: 100%;
+	max-width: 100%;
+	-webkit-backdrop-filter: blur(100px);
+	backdrop-filter: blur(150px);
+	box-shadow: var(--box-shadow-1);
+}
+
+.quiz-container:hover {
+	transition: all 0.25s ease-in-out;
+	box-shadow: var(--box-shadow-2);
+	-webkit-backdrop-filter: blur(100px);
+	backdrop-filter: blur(150px);
+}
+
+.quiz-header {
+	padding: 4rem 4rem 2rem 4rem;
+}
+
+#question {
+	font-size: var(--font-size-large);
+}
+
+#a_text,
+#b_text,
+#c_text,
+#d_text {
+	font-size: var(--font-size-normal);
+}
+
+#quiz {
+	padding-left: 1rem;
+}
+
+.button {
+	display: block;
+	border: none;
+	width: 100%;
+	cursor: pointer;
+	padding: 1.3rem;
+	font-family: inherit;
+	font-size: var(--font-size-normal);
+	color: var(--color-white);
+	background-color: var(--color-button-green);
+}
+
+.button:hover {
+	transition: all 0.25s ease-in-out;
+	background-color: var(--color-button-hover-green);
+}
+
+button:focus {
+	transition: all 0.25s ease-in-out;
+	background-color: var(--color-button-green);
+	outline: none;
+}
+
+/* Small mobile screen (portrait 320px) // Change to (max-device-width: 320px) when finished */
+@media screen and (max-width: 320px) {
+	/*===== VARIABLES CSS =====*/
+	:root {
+		/*========== Font Size ==========*/
+		--font-size-normal: 2.5vw;
+		--font-size-large: 5vw;
+
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	h2 {
+		font-size: var(--font-size-large);
+		padding: 0rem;
+	}
+
+	/*===== NAVIGATION MENU =====*/
+	.nav {
+		position: relative;
+		width: 100%;
+		padding: 1rem 1.25rem;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 1rem;
+	}
+
+	.nav__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		padding: 3rem 2rem 4.25rem 2rem;
+		box-shadow: 0 -1px 4px var(--box-shadow);
+		background-color: var(--color-white);
+		border: var(--color-black-border-outline) 0.25rem solid;
+		border-radius: 0 0 1.5rem 1.5rem;
+		transition: 0.3s;
+	}
+
+	.nav__list {
+		font-size: var(--font-size-normal);
+		font-weight: var(--font-weight-semi-bold);
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0rem;
+		column-gap: 2rem;
+		row-gap: 3rem;
+		text-align: center;
+		align-items: center;
+		justify-self: center;
+	}
+
+	/* Show navigation Menu */
+	.show-menu {
+		top: 0;
+	}
+
+	/*============ QUESTIONNAIRE ============*/
+	.questionnaire-title_container {
+		padding: 0.5rem;
+	}
+}
+
+/* Medium mobile screen (portrait 321px - 375px) // Change to (max-device-width: 375px) when finished */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== Font Size ==========*/
+		--font-size-normal: 2.5vw;
+		--font-size-large: 5vw;
+
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+	.nav {
+		position: relative;
+		width: 100%;
+		padding: 1rem 1.25rem;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 1rem;
+	}
+
+	.nav__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		padding: 3rem 2rem 4.25rem 2rem;
+		box-shadow: 0 -1px 4px var(--box-shadow);
+		background-color: var(--color-white);
+		border: var(--color-black-border-outline) 0.25rem solid;
+		border-radius: 0 0 1.5rem 1.5rem;
+		transition: 0.3s;
+	}
+
+	.nav__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0rem;
+		column-gap: 2rem;
+		row-gap: 3rem;
+		text-align: center;
+		align-items: center;
+		justify-self: center;
+		font-size: var(--font-size-normal);
+		font-weight: var(--font-weight-semi-bold);
+	}
+
+	/* Show navigation Menu */
+	.show-menu {
+		top: 0;
+	}
+
+	/*============ QUESTIONNAIRE ============*/
+	.questionnaire-title_container {
+		padding: 0.5rem;
+	}
+}
+
+/* Large mobile screen (portrait 376px - 425px) // Change to (max-device-width: 425px) when finished */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== Font Size ==========*/
+		--font-size-normal: 2.5vw;
+		--font-size-large: 5vw;
+
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+
+	.nav {
+		position: relative;
+		width: 100%;
+		padding: 1rem 1.25rem;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 1rem;
+	}
+
+	.nav__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		padding: 3rem 2rem 4.25rem 2rem;
+		box-shadow: 0 -1px 4px var(--box-shadow);
+		background-color: var(--color-white);
+		border: var(--color-black-border-outline) 0.25rem solid;
+		border-radius: 0 0 1.5rem 1.5rem;
+		transition: 0.3s;
+	}
+
+	.nav__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0rem;
+		column-gap: 2rem;
+		row-gap: 3rem;
+		text-align: center;
+		align-items: center;
+		justify-self: center;
+		font-size: var(--font-size-normal);
+		font-weight: var(--font-weight-semi-bold);
+	}
+
+	/* Show navigation Menu */
+	.show-menu {
+		top: 0;
+	}
+
+	/*============ QUESTIONNAIRE ============*/
+	.questionnaire-title_container {
+		padding: 0.5rem;
+	}
+}
+
+/* XL Large mobile screen (portrait 426px - 767px) // Change to (max-device-width: 425px) when finished */
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== Font Size ==========*/
+		--font-size-normal: 2.5vw;
+		--font-size-large: 3.5vw;
+
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+	.nav {
+		position: relative;
+		width: 100%;
+		padding: 1rem 1.25rem;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 1rem;
+	}
+
+	.nav__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		padding: 3rem 2rem 4.25rem 2rem;
+		box-shadow: 0 -1px 4px var(--box-shadow);
+		background-color: var(--color-white);
+		border: var(--color-black-border-outline) 0.25rem solid;
+		border-radius: 0 0 1.5rem 1.5rem;
+		transition: 0.3s;
+	}
+
+	.nav__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0rem;
+		column-gap: 2rem;
+		row-gap: 3rem;
+		text-align: center;
+		align-items: center;
+		justify-self: center;
+		font-size: var(--font-size-normal);
+		font-weight: var(--font-weight-semi-bold);
+	}
+	/* Show navigation Menu */
+	.show-menu {
+		top: 0;
+	}
+
+	/*============ QUESTIONNAIRE ============*/
+	.questionnaire-title_container {
+		padding: 0.5rem;
+	}
+}
+
+/* Tablet screen (portrait 768px - 1024px) // Change to (max-device-width: 768px) when finished */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== Font Size ==========*/
+		--font-size-normal: 1.5vw;
+		--font-size-large: 2vw;
+
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+	.header {
+		padding: 0.25rem 1rem;
+	}
+
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.25rem 0.25rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
+
+/* Normal Laptop screen (portrait 1024px - 1200px) // Change to (max-device-width: 1024px) when finished */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.25rem 0.25rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
+
+/* Normal Laptop screen (portrait 1200px - 1439px) // Change to (max-device-width: 1024px) when finished */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.5rem 0.5rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
+
+/* Large Laptop screen (portrait 1440px - 1499px) // Change to (max-device-width: 1440px) when finished */
+@media only screen and (min-width: 1440px) and (max-width: 1499px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.5rem 0.5rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
+
+/* 2K screen and larger (portrait 1500px - 1599px) // Change to (max-device-width: 1440px) when finished */
+@media only screen and (min-width: 1500px) and (max-width: 1599px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.website-name {
+		font-size: var(--font-size-body);
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.25rem 0.25rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
+
+/* 2K screen and larger (portrait 1601px - 2180px) // Change to (max-device-width: 1440px) when finished */
+@media only screen and (min-width: 1600px) and (max-width: 2180px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.25rem 0.25rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
+
+/* 2K screen and larger (portrait 2181px - 2499px) // Change to (max-device-width: 1440px) when finished */
+@media only screen and (min-width: 2181px) and (max-width: 2499px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.5rem 0.5rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
+
+/* 4K Screen & Bigger(portrait 2500px - 2699px) // Change to (max-device-width: 2560px) when finished */
+@media only screen and (min-width: 2500px) and (max-width: 2699px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.75rem 2rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
+
+/* 4K Screen & Bigger(portrait 2700px - 3840px) // Change to (max-device-width: 2560px) when finished */
+@media only screen and (min-width: 2700px) and (max-width: 3840px) {
+	/*==================== VARIABLES CSS ====================*/
+	:root {
+		/*========== image box shadow ==========*/
+		--box-shadow: 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+	}
+
+	/*===== NAVIGATION MENU =====*/
+	.nav {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.nav__title {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.nav__menu {
+		position: relative;
+		padding: 0.75rem 2rem;
+		align-self: center;
+		justify-self: end;
+	}
+
+	.nav__icon,
+	.nav__toggle,
+	.nav__close,
+	.change-theme {
+		display: none;
+	}
+}
