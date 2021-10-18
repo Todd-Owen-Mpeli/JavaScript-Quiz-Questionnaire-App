@@ -16,13 +16,15 @@ To understand array data structures. From creating an arrary, storing objects wi
 # Lessons Learned
 I learned a lot building this application. But mainly from the use of connecting the back-end calculation class and displaying the results of process to the user.
 
-1. Creating a DarkMode theme in CSS and toggling the theme on/off.
-2. Utilizing an if statement to verify if the darkMode theme if active or not. And if the theme is active manipulate the HTML DOM by changing the darkMode theme icon to another icon.
-3. Utilizing an event listener when a button as been clicked and then executing a operation afterwards.
-4. Having a global variable to execute functions. (Example: calculator.updateDisplay()).
+1. Creating an Array.
+2. Creating objects with multiple infomation within them.
+3. Having a correct answer within each object.
+4. Retrieving each data information into variables.
+5. Creating a multiple choice display.
+6. Answer verification and diplaying the number of correct answers.  
 
 # Personal Improvements
-Although the calculator application executes on it original objective. I would like to further understand javascript language by building a more realistic real-world application or functionality.
+Although the Quiz/Questionnaire application executes on it original objective. I would like build a more realistic real-world application.
 
 # Deployment
 Deployed with GitHub pages. (Near Future)
