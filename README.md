@@ -13,6 +13,12 @@ After learning & utilizing the basics of JavaScript, the Syntax, Variables, Oper
 # My Objective
 To understand array data structures. From creating an arrary, storing objects with infomation within it into an array. And how to retrieve each object and display the information. 
 
+# Cover Screenshot
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="src/img/Quiz%20App%20cover%20image.png" width="100%" height="700px">
+
 # Lessons Learned
 I learned a lot building this application. But mainly from the use of connecting the back-end calculation class and displaying the results of process to the user.
 
