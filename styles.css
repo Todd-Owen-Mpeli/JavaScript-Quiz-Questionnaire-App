@@ -128,17 +128,31 @@ p {
 	font-family: var(--font-body);
 }
 
+.nav__title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .nav li {
 	color: var(--color-font-black);
 }
 
 .website-name {
-	height: auto;
 	font-size: var(--font-size-large);
 }
 
 .website-name:hover {
 	transition: all 0.5s ease-in-out;
+	color: var(--color-navigation-hover-accent-pinkRedPurple);
+}
+
+.uil {
+	margin-left: 1rem;
+	font-size: 2rem;
+}
+.uil:hover {
+	margin-left: 1rem;
 	color: var(--color-navigation-hover-accent-pinkRedPurple);
 }
 
