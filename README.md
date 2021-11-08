@@ -27,4 +27,4 @@ I learned a lot building this application. But mainly from the use of connecting
 Although the Quiz/Questionnaire application executes on it original objective. I would like build a more realistic real-world application.
 
 # Deployment
-Deployed with GitHub pages. (Near Future)
+Deployed with GitHub pages here: https://todd-owen-mpeli.github.io/JavaScript-Quiz-Questionnaire-App/
