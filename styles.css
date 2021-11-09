@@ -37,10 +37,10 @@
 	--color-navigation-hover-accent-pinkRedPurple: #9d73ff;
 
 	/*========== Font Size ==========*/
-	--font-size-normal: 1.1vh;
-	--font-size-large: 1.5vh;
-	--font-size-XL-large: 4.5vh;
-	--font-size-navClose: 2.5vh;
+	--font-size-normal: 1rem;
+	--font-size-large: 1.25rem;
+	--font-size-XL-large: 3.5rem;
+	--font-size-navClose: 2rem;
 
 	/*========== image box shadow ==========*/
 	--box-shadow-1: 0em 1em 1em rgba(0, 0, 0, 0.25);
